@@ -19,7 +19,7 @@ CREATE TABLE hosting
 
 CREATE TABLE users_has_hosting
 (
-  serverpay DATE NOT NULL DEFAULT GETDATE(),
+  serverpay DATE NOT NULL DEFAULT NOW(),
   userid INT NOT NULL,
   idhosting INT NOT NULL,
   PRIMARY KEY (userid, idhosting),
