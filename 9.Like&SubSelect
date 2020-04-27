@@ -1,0 +1,3 @@
+SELECT * FROM userInfo WHERE RIGHT(usermail, LENGTH(usermail) - LOCATE('@', usermail)) LIKE "localhost.com";
+
+SELECT * FROM users_has_hosting WHERE users_userid = (SELECT userid FROM users WHERE username LIKE 'mysqlTest');
