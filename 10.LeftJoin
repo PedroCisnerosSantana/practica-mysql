@@ -1,0 +1,1 @@
+SELECT u.userid, uh.hosting_idhosting, uh.serverpay, u.username, u.userrol, u.usermail FROM users_has_hosting uh LEFT JOIN users u ON u.userid=uh.users_userid;
